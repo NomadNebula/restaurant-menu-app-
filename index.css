@@ -1,0 +1,326 @@
+body{
+  margin: 0 auto;
+  font-family: "Smythe", sans-serif;
+}
+
+ /* change px to em for accessbililtiy  */
+ 
+ 
+ /* Hero Image */
+
+.hero-image{
+    background-image: url("images/menu.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 1.375rem;
+    padding-bottom: 1.375rem;
+    width: auto;
+}
+
+/* Typography */
+
+.hero-text{
+    color: #ffffff; 
+    margin-left: 2.875rem;
+    line-height: 1.1875rem; 
+}
+
+h1{
+    font-size: 2.375rem;    
+}
+
+h2{
+    font-size:  1.75rem; 
+}
+
+.menu-name {
+    margin: 0;
+    font-size:  1.75rem;
+    padding-bottom: 0.3125rem; 
+}
+
+.menu-ingredients {
+    margin: 0;
+    color: #8B8B8B;
+    
+}
+
+.menu-prize {
+    margin: 0;
+    padding-top: 0.5rem
+}
+
+
+
+/* Menu Section */
+
+.menu-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8.75rem;
+    margin-top: 2.8125rem;
+    margin-bottom: 2.8125rem;
+}
+
+
+.emoji {
+   margin-left: 4.375rem;
+   padding-right: 1.25rem;
+   font-size: 3.75rem;   
+}
+
+
+.items-container {
+   display: flex;
+   flex-direction: column;
+   height: 5em;
+   margin-right: auto;
+}
+
+.menu-btn {
+  background: none; 
+  border-radius: 50%;
+  border: 1.5px solid #DEDEDE;
+  color: #3C3C3C;
+  padding: 1.25rem;
+  display: inline-block;
+  font-size: 1.5rem; 
+  margin-right: 3.125rem;
+  font-family: 'Inter' sans-serif;
+}
+
+.menu-btn:hover {
+  transform: scale(1.1);
+  background-color: teal;
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu-btn:active {
+    color: #fff; 
+    background-color: grey; 
+}
+
+hr{
+  border-top: 1px solid #bbb;
+  width: 31.5rem;
+}
+
+
+/* order checkout feed */
+
+.cart {
+   padding-top: 2em;
+}
+
+
+.cart-title{
+    display: none;
+    justify-content: center;
+    font-size: 1.75rem;
+    padding-bottom: .75rem;
+}
+
+.selections {
+  display: flex;
+  justify-content: space-between;
+  width: 87%;
+  margin: 0 auto;
+  font-size: 1.75rem;
+}
+
+.selection-name {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+.remove-btn{
+    font-size: .75rem;
+    padding-top: 1rem;
+    color: #BBBBBB;
+    background: none;
+    border: none;
+    margin-left: 0;
+}
+
+.total {
+  width: 87%;
+  border-top: solid 2px #393333;
+  margin: 0 auto; /* Center it */
+}
+
+#total-price{ 
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+ margin-top: 1rem; 
+}
+
+.total-line {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+
+.label, .amount {
+  font-size: 1.75rem;
+  padding-bottom: 1.5rem;
+}
+
+
+.complete-order-btn{
+    align-items: center;
+    font-family: Verdana, sans-serif;
+    font-size: 1.25rem;
+    background-color: #16DB99;
+    color: #fff;
+    border: none;
+    border-radius: 0.375rem; 
+    width: 31.25rem; 
+    height: 4.4rem;
+    margin-bottom: 3.75rem; 
+    
+}
+
+/* Modal Container  */
+
+
+.form-modal {
+  display: none;
+  position: fixed;
+  top: 50%;        /* Centers it vertically */
+  left: 50%;       /* Centers it horizontally */
+  transform: translate(-50%, -50%);  /* Correct positioning */
+  background-color: white;
+  box-shadow: 5px 5px 0px 50px #00000080;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 4px;
+  width: 70%;
+}
+
+.form-modal h2{
+  font-size: 1.50rem;
+  font-weight: 700;
+  color: #000000;
+  padding: 1.25em;
+}
+
+
+/* Modal  */
+
+.modal-title {
+    
+    font-family: Verdana, sans-serif;
+    font-size: 1.5rem; 
+    text-align: center;
+    margin-right: 6.875rem; 
+    margin-bottom: 3.25rem; 
+    margin-top: 2.875rem; 
+    
+}
+
+#payment-form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em; /* adds space between inputs */
+  margin-bottom: 2em;
+}
+
+#payment-form input{
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #757575;
+  border: solid 1.3px #757575;
+  border-radius: 2px;
+  padding: 1em 0em 1em .7em;  
+}
+
+/* Modal btn */
+
+.modal-submit-btn { 
+  background-color: #16DB99;
+  font-size: 1.25em;
+  font-weight: 700; 
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  padding: 1em 1em;
+  padding-bottom: 1em;
+  margin: 1em;  
+}
+
+.modal-close-btn {
+  padding: 0;
+  background: white;
+  color: #bcbcbc;
+  border: solid 1px #bcbcbc;
+}
+
+
+.modal-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.875em;  
+}
+
+.close-modal-btn-container{
+  display: flex;
+  justify-content: right;
+  text-align: center;
+}
+
+#pay-modal-btn {
+    font-family: Verdana, sans-serif;
+    font-size:  1.25em;
+    background-color: #16DB99;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    width: 31.25rem;
+    height: 4.4em;
+}
+
+#thank-you-msg{
+  display: none;   /* Hidden by default */
+  position: fixed; 
+  top: 50%;        /* Centers it vertically */
+  left: 50%;       /* Centers it horizontally */
+  transform: translate(-50%, -50%);  /* Correct positioning */
+  padding: 90px;
+  border-radius: 10px;
+  border: solid 6px;
+  border-color: red orange blue lightseagreen;
+  text-align: center;
+  background: #ECFDF5;
+  box-shadow: 30px 30px 90px 5px skyblue inset;
+  color: #16DB99;
+  width: 75%;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.thnks-close-btn{
+  position: absolute;  /* Positions it relative to the #thank-you-msg */
+  bottom: 20px;        /* Places the button at the bottom */
+  right: 20px;         /* Places the button at the right */
+  padding: 0;
+  background: transparent;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #bcbcbc;
+  border: solid 1px #bcbcbc;
+}
+
