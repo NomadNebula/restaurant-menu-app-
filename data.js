@@ -28,6 +28,4 @@ export const menuArray = [
 ]
 
 
-// create a uuid and attach a data attribute to identify specific menu item and rendering inside innerHMTL
-
 
